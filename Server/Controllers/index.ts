@@ -13,9 +13,9 @@ export function DisplayAboutPage(req: express.Request , res: express.Response , 
 }
 
 //Controller logic to display your services page
-export function DisplayServicesPage(req: express.Request , res: express.Response , next: express.NextFunction): void
+export function DisplayFeaturesPage(req: express.Request , res: express.Response , next: express.NextFunction): void
 {
-    res.render('index');
+    res.render('features');
 }
 
 //Controller logic to display your projects page

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.DisplayTeamPage = exports.DisplayContactPage = exports.DisplayProjectsPage = exports.DisplayServicesPage = exports.DisplayAboutPage = exports.DisplayHomePage = void 0;
+exports.DisplayTeamPage = exports.DisplayContactPage = exports.DisplayProjectsPage = exports.DisplayFeaturesPage = exports.DisplayAboutPage = exports.DisplayHomePage = void 0;
 function DisplayHomePage(req, res, next) {
     res.render('index');
 }
@@ -9,10 +9,10 @@ function DisplayAboutPage(req, res, next) {
     res.render('index');
 }
 exports.DisplayAboutPage = DisplayAboutPage;
-function DisplayServicesPage(req, res, next) {
-    res.render('index');
+function DisplayFeaturesPage(req, res, next) {
+    res.render('features');
 }
-exports.DisplayServicesPage = DisplayServicesPage;
+exports.DisplayFeaturesPage = DisplayFeaturesPage;
 function DisplayProjectsPage(req, res, next) {
     res.render('index');
 }
