@@ -6,12 +6,6 @@ export function DisplayHomePage(req: express.Request , res: express.Response , n
     res.render('index');
 }
 
-//Controller logic to display your about page
-export function DisplayAboutPage(req: express.Request , res: express.Response , next: express.NextFunction): void
-{
-    res.render('index');
-}
-
 //Controller logic to display your services page
 export function DisplayFeaturesPage(req: express.Request , res: express.Response , next: express.NextFunction): void
 {
@@ -19,9 +13,9 @@ export function DisplayFeaturesPage(req: express.Request , res: express.Response
 }
 
 //Controller logic to display your projects page
-export function DisplayProjectsPage(req: express.Request , res: express.Response , next: express.NextFunction): void
+export function DisplayAppPage(req: express.Request , res: express.Response , next: express.NextFunction): void
 {
-    res.render('index');
+    res.render('app');
 }
 
 //Controller logic to display your contact page

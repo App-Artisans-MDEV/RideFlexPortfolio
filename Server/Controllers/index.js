@@ -1,22 +1,18 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.DisplayTeamPage = exports.DisplayContactPage = exports.DisplayProjectsPage = exports.DisplayFeaturesPage = exports.DisplayAboutPage = exports.DisplayHomePage = void 0;
+exports.DisplayTeamPage = exports.DisplayContactPage = exports.DisplayAppPage = exports.DisplayFeaturesPage = exports.DisplayHomePage = void 0;
 function DisplayHomePage(req, res, next) {
     res.render('index');
 }
 exports.DisplayHomePage = DisplayHomePage;
-function DisplayAboutPage(req, res, next) {
-    res.render('index');
-}
-exports.DisplayAboutPage = DisplayAboutPage;
 function DisplayFeaturesPage(req, res, next) {
     res.render('features');
 }
 exports.DisplayFeaturesPage = DisplayFeaturesPage;
-function DisplayProjectsPage(req, res, next) {
-    res.render('index');
+function DisplayAppPage(req, res, next) {
+    res.render('app');
 }
-exports.DisplayProjectsPage = DisplayProjectsPage;
+exports.DisplayAppPage = DisplayAppPage;
 function DisplayContactPage(req, res, next) {
     res.render('contact');
 }
