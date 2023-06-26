@@ -13,17 +13,21 @@
             <div class="collapse navbar-collapse main-navigation mainmenu " id="main-nav-bar">
                 
                 <ul class="nav navbar-nav navigation-box">
-                    <li class="current"> 
-                        <a href="index.html">Home</a>
+                    <li class="<%= (page == 'home') ? 'current' : '' %>"> 
+                        <a href="/home">Home</a>
                     </li>
-                    <li> <a href="features.html">Features</a> </li>
-                    <li> 
-                        <a href="team.html">Team</a> 
+                    <li class="<%= (page == 'features') ? 'current' : '' %>"> 
+                        <a href="/features">Features</a> 
                     </li>
-                    <li> 
-                        <a href="app.html">App</a>
+                    <li class="<%= (page == 'team') ? 'current' : '' %>"> 
+                        <a href="/team">Team</a> 
                     </li>
-                    <li> <a href="contact.html">Contact</a> </li>
+                    <li class="<%= (page == 'app') ? 'current' : '' %>"> 
+                        <a href="/app">App</a>
+                    </li>
+                    <li class="<%= (page == 'contact') ? 'current' : '' %>">
+                         <a href="/contact">Contact</a> 
+                    </li>
                 </ul>                
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
