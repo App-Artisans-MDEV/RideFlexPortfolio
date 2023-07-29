@@ -12,5 +12,6 @@ router.get('/features', (req, res, next) => (0, Controllers_1.DisplayFeaturesPag
 router.get('/app', (req, res, next) => (0, Controllers_1.DisplayAppPage)(req, res, next));
 router.get('/contact', (req, res, next) => (0, Controllers_1.DisplayContactPage)(req, res, next));
 router.get('/team', (req, res, next) => (0, Controllers_1.DisplayTeamPage)(req, res, next));
+router.post("/sendmail", (req, res, next) => { (0, Controllers_1.SendMail)(req, res, next); });
 exports.default = router;
 //# sourceMappingURL=index.js.map

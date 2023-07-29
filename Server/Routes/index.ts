@@ -2,7 +2,7 @@ import express from 'express';
 let router = express.Router();
 
 //import the index controller
-import { DisplayContactPage, DisplayHomePage, DisplayAppPage, DisplayFeaturesPage, DisplayTeamPage } from '../Controllers';
+import { DisplayContactPage, DisplayHomePage, DisplayAppPage, DisplayFeaturesPage, DisplayTeamPage, SendMail } from '../Controllers';
 
 /* GET  Default Route */
 router.get('/', (req, res, next) => DisplayHomePage(req , res , next) );
@@ -21,5 +21,7 @@ router.get('/contact', (req, res, next) => DisplayContactPage(req , res , next) 
 
 /* GET Team Page */
 router.get('/team', (req, res, next) => DisplayTeamPage(req , res , next) );
+
+router.post("/sendmail" , (req, res, next) => { SendMail(req, res, next) });
 
 export default router;
