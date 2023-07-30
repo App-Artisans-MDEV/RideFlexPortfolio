@@ -48,9 +48,9 @@
 @import url(hover-min.css);
 @import url(font-awesome.min.css);
 @import url(jquery.bxslider.min.css);
-@import url(../plugins/icofont/css/icofont.css);
-@import url(../plugins/bands-icon/style.css);
-@import url(../plugins/mixup-icon/style.css);
+@import url(../Assets/plugins/icofont/css/icofont.css);
+@import url(../Assets/plugins/bands-icon/style.css);
+@import url(../Assets/plugins/mixup-icon/style.css);
 /************************** 
 * 2. miscelnious styles 
 ***************************/
@@ -706,7 +706,7 @@ body.active-preloader-ovh {
   content: '';
   width: 1920px;
   height: 1039px;
-  background: transparent url(../img/banner-bg-1-1.png) right bottom no-repeat;
+  background: transparent url(../Assets/img/banner-bg-1-1.png) right bottom no-repeat;
   background-size: 100% 100%;
 }
 .banner-style-one .banner-content {
@@ -767,7 +767,7 @@ body.active-preloader-ovh {
   content: '';
   width: 1920px;
   height: 904px;
-  background: transparent url(../img/banner-bg-2-1.png) right bottom no-repeat;
+  background: transparent url(../Assets/img/banner-bg-2-1.png) right bottom no-repeat;
   background-size: 100% 100%;
 }
 .banner-style-two .banner-content {
@@ -817,7 +817,7 @@ body.active-preloader-ovh {
 .banner-style-three {
   padding-top: 125px;
   overflow: hidden;
-  background: #F9F7F5 url(../img/banner-bg-3-1.png) left top no-repeat;
+  background: #F9F7F5 url(../Assets/img/banner-bg-3-1.png) left top no-repeat;
 }
 .banner-style-three .banner-content {
   padding-top: 130px;
@@ -890,7 +890,7 @@ body.active-preloader-ovh {
   padding-top: 240px;
   padding-bottom: 224px;
   overflow: hidden;
-  background: #1C2135 url(../img/banner-bg-4-1.png) left top no-repeat;
+  background: #1C2135 url(../Assets/img/banner-bg-4-1.png) left top no-repeat;
 }
 .banner-style-four .banner-content {
   padding-top: 130px;
@@ -1074,7 +1074,7 @@ body.active-preloader-ovh {
 }
 
 .banner-style-six {
-  background: #FAF8F5 url(../img/banner-bg-6-1.png) left top no-repeat;
+  background: #FAF8F5 url(../Assets/img/banner-bg-6-1.png) left top no-repeat;
   background-size: cover;
   padding-top: 130px;
   overflow: hidden;
@@ -1364,7 +1364,7 @@ body.active-preloader-ovh {
   margin-top: 12px;
 }
 .featured-tab-box .features-tab-content {
-  background: #F5FAFC url(../img/pattern-1-1.png) left top repeat;
+  background: #F5FAFC url(../Assets/img/pattern-1-1.png) left top repeat;
 }
 .featured-tab-box .features-tab-content .single-tab-content {
   padding: 60px;
@@ -1443,7 +1443,7 @@ body.active-preloader-ovh {
 }
 
 .video-box-style-two {
-  background: #E68F48 url(../img/video-bg-1-1.jpg) center center no-repeat fixed;
+  background: #E68F48 url(../Assets/img/video-bg-1-1.jpg) center center no-repeat fixed;
 }
 .video-box-style-two .inner-box {
   position: relative;
@@ -1751,7 +1751,7 @@ body.active-preloader-ovh {
   padding-bottom: 5px;
 }
 .app-screenshot-style-two .owl-carousel:before {
-  content: url(../img/screenshot-moc-1-1.png);
+  content: url(../Assets/img/screenshot-moc-1-1.png);
   left: 50%;
   position: absolute;
   top: 50%;
@@ -1760,7 +1760,7 @@ body.active-preloader-ovh {
 }
 @media (max-width: 1366px) {
   .app-screenshot-style-two .owl-carousel:before {
-    content: url(../img/screenshot-moc-1-2.png);
+    content: url(../Assets/img/screenshot-moc-1-2.png);
   }
 }
 .app-screenshot-style-two .thm-container {
@@ -1800,7 +1800,7 @@ body.active-preloader-ovh {
   content: '';
   width: 100%;
   height: 100%;
-  background: transparent url(../img/pattern-2-1.png) left top repeat;
+  background: transparent url(../Assets/img/pattern-2-1.png) left top repeat;
   position: absolute;
   top: 0;
   left: 0;
@@ -1825,7 +1825,7 @@ body.active-preloader-ovh {
   content: '';
   width: 100%;
   height: 100%;
-  background: transparent url(../img/pattern-2-1.png) left top repeat;
+  background: transparent url(../Assets/img/pattern-2-1.png) left top repeat;
   position: absolute;
   top: 0;
   left: 0;
@@ -1884,7 +1884,7 @@ body.active-preloader-ovh {
   content: '';
   width: 45px;
   height: 86px;
-  background: transparent url(../img/testi-quote-1.png) left top no-repeat;
+  background: transparent url(../Assets/img/testi-quote-1.png) left top no-repeat;
   position: absolute;
   left: 20px;
   top: -10px;
@@ -2576,7 +2576,7 @@ body.active-preloader-ovh {
   content: '';
   width: 100%;
   height: 100%;
-  background: transparent url(../img/pattern-2-1.png) left top repeat;
+  background: transparent url(../Assets/img/pattern-2-1.png) left top repeat;
   position: absolute;
   top: 0;
   left: 0;
@@ -2635,7 +2635,7 @@ body.active-preloader-ovh {
 }
 
 .footer-style-four {
-  background: transparent url(../img/footer-curve-2-1.png) bottom left repeat-x;
+  background: transparent url(../Assets/img/footer-curve-2-1.png) bottom left repeat-x;
   background-size: cover;
 }
 .footer-style-four .thm-container {
@@ -3851,7 +3851,7 @@ body.active-preloader-ovh {
   background: #5D3DE3;
 }
 .home-page-five .testimonial-style-one .single-testimonials-style-one:before {
-  background: transparent url(../img/testi-quote-5.png) left top no-repeat;
+  background: transparent url(../Assets/img/testi-quote-5.png) left top no-repeat;
 }
 .home-page-five .home-page-five .subscribe-style-one form.subscribe-form button[type=submit],
 .home-page-five .grow-style-one .grow-content a.grow-btn:hover {
@@ -4048,7 +4048,7 @@ body.active-preloader-ovh {
   border-bottom-color: #E68F48;
 }
 .home-page-three .featured-tab-box .features-tab-content {
-  background: #F9F7F5 url(../img/pattern-3-1.png) left top repeat;
+  background: #F9F7F5 url(../Assets/img/pattern-3-1.png) left top repeat;
 }
 .home-page-three .feature-style-two {
   padding-top: 60px;
