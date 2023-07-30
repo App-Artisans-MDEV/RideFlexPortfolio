@@ -1,5 +1,5 @@
 import express from 'express';
-
+import nodemailer from "nodemailer";
 //Controller logic to display your home page
 export function DisplayHomePage(req: express.Request , res: express.Response , next: express.NextFunction): void
 {
@@ -30,37 +30,32 @@ export function DisplayTeamPage(req: express.Request , res: express.Response , n
     res.render('team' , {page : 'team'});
 }
 
-export function SendMail(req: express.Request, res: express.Response, next: express.NextFunction): void {
+export async function SendMail(req: express.Request, res: express.Response, next: express.NextFunction) {
     const { name, email, message } = req.body;
-
     console.log(req.body);
 
-    const formData = require('form-data');
-    const Mailgun = require('mailgun.js');
-    const mailgun = new Mailgun(formData);
-    console.log("here");
+    const transporter = nodemailer.createTransport({
+        host: "mail.sahiljani.dev",
+        port: 465,
+        secure: true, 
+        auth: {
+          user: "info@sahiljani.dev", 
+          pass: "!kqdfHh0=ntD",       
+        },
+      });
+      
+      const mailOptions = {
+        from: "info@sahiljani.dev",
+        to: "iyervivek1000@gmail.com", // Replace with the recipient's email address
+        subject: "Inquiry Received",
+        text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+      };
 
-    // Load Mailgun API key from your environment variables or replace <PRIVATE_API_KEY> with your actual API key
-    const mg = mailgun.client({
-        username: 'api',
-        key: '73f745ed-965dfdad'
-    });
-
-    const domain = 'sandboxcdeb9be739cc42f1a367966ef9ee4187.mailgun.org'; // Replace with your Mailgun domain
-
-    mg.messages
-        .create(domain, {
-            from: 'Mailgun Sandbox <postmaster@sandboxcdeb9be739cc42f1a367966ef9ee4187.mailgun.org>',
-            to: ['rahilkhatri4@gmail.com'], // Replace with the recipient's email address
-            subject: 'Hello',
-            text: 'You have got a message from ' + email + '. The message is ' + message,
-        })
-        .then((msg: any) => {
-            console.log(msg); // logs response data
-            res.send({ "success": true }); // Send a response to the client indicating the email was sent successfully
-        })
-        .catch((err: any) => {
-            console.error(err); // logs any error
-            res.status(500).send({ "success": false, "error": "Failed to send email." }); // Send an error response to the client in case of failure
-        });
+      try {
+        const info = await transporter.sendMail(mailOptions);
+        console.log("Email sent successfully:", info.messageId);
+      } catch (error) {
+        console.error("Error sending email:", error);
+      }
+    res.send({ "success": true });
 }
