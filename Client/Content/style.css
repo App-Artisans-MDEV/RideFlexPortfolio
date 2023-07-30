@@ -48,9 +48,9 @@
 @import url(hover-min.css);
 @import url(font-awesome.min.css);
 @import url(jquery.bxslider.min.css);
-/* @import url(../plugins/icofont/css/icofont.css);
+@import url(../plugins/icofont/css/icofont.css);
 @import url(../plugins/bands-icon/style.css);
-@import url(../plugins/rideflex-icon/style.css); */
+@import url(../plugins/mixup-icon/style.css);
 /************************** 
 * 2. miscelnious styles 
 ***************************/
@@ -235,65 +235,23 @@ body.active-preloader-ovh {
 }
 
 .preloader {
-  background: #1f53a9;
-  background: -webkit-gradient(left top, right top, color-stop(0%, #1f53a9), color-stop(64%, #2c9dce), color-stop(100%, #2c9dce));
-  background: -webkit-gradient(linear, left top, right top, from(#1f53a9), color-stop(64%, #2c9dce), to(#2c9dce));
-  background: linear-gradient(to right, #1f53a9 0%, #2c9dce 64%, #2c9dce 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f53a9', endColorstr='#2c9dce', GradientType=1);
-  height: 100%;
-  left: 0;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  z-index: 9999999;
+  height: 100%;
+  background-color: #fff; /* You can set a background color for the preloader */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure the preloader is on top of other content */
 }
-.preloader.thm-gradient-two {
-  background: #4c1da2;
-  background: -webkit-gradient(left top, right top, color-stop(0%, #4c1da2), color-stop(100%, #bc5f9d));
-  background: -webkit-gradient(linear, left top, right top, from(#4c1da2), to(#bc5f9d));
-  background: linear-gradient(to right, #4c1da2 0%, #bc5f9d 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c1da2', endColorstr='#bc5f9d', GradientType=1 );
+
+.preloader img {
+  width: 600px; /* Adjust the width and height as needed */
+  height: auto;
 }
-.preloader.yellow-bg {
-  background: #ffb907;
-  background: -webkit-gradient(left top, right top, color-stop(0%, #ffb907), color-stop(100%, #ffd84f));
-  background: -webkit-gradient(linear, left top, right top, from(#ffb907), to(#ffd84f));
-  background: linear-gradient(to right, #ffb907 0%, #ffd84f 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb907', endColorstr='#ffd84f', GradientType=1 );
-}
-.preloader .spinner {
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -30px;
-  margin-left: -30px;
-  background-color: #fff;
-  border-radius: 100%;
-  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
-  animation: sk-scaleout 1.0s infinite ease-in-out;
-}
-@-webkit-keyframes sk-scaleout {
-  0% {
-    -webkit-transform: scale(0);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    opacity: 0;
-  }
-}
-@keyframes sk-scaleout {
-  0% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 0;
-  }
-}
+
 /************************** 
 * 3. header styles 
 ***************************/
@@ -3815,11 +3773,11 @@ body.active-preloader-ovh {
 ***************************/
 .home-page-five .preloader,
 .home-page-five .scroll-to-top {
-  background: #5e3bed;
-  background: -webkit-gradient(left top, right top, color-stop(0%, #5e3bed), color-stop(100%, #826cfd));
-  background: -webkit-gradient(linear, left top, right top, from(#5e3bed), to(#826cfd));
-  background: linear-gradient(to right, #5e3bed 0%, #826cfd 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e3bed', endColorstr='#826cfd', GradientType=1 );
+  background: #121820;
+  background: -webkit-gradient(left top, right top, color-stop(0%, #121820), color-stop(100%, #121820));
+  background: -webkit-gradient(linear, left top, right top, from(#121820), to(#121820));
+  background: linear-gradient(to right, #121820 0%, #121820 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#121820', endColorstr='#121820', GradientType=1 );
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
